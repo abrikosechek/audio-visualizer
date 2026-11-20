@@ -1,0 +1,12 @@
+/* Reusable glass surface. Use on any panel, window, or floating control. */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-highlight), var(--glass-shadow);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.glass--strong {
+  background: var(--glass-bg-strong);
+}

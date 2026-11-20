@@ -1,0 +1,40 @@
+@import '@/shared/styles/tokens.css';
+@import '@/shared/styles/glass.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background:
+    radial-gradient(60vw 60vw at 10% 0%, var(--bg-glow-1), transparent 60%),
+    radial-gradient(50vw 50vw at 100% 30%, var(--bg-glow-2), transparent 60%),
+    radial-gradient(50vw 50vw at 30% 100%, var(--bg-glow-3), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: rgba(139, 123, 255, 0.4);
+}

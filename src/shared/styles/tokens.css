@@ -1,0 +1,57 @@
+/* Design tokens: dark theme + glass surfaces. */
+:root {
+  color-scheme: dark;
+
+  /* Background */
+  --bg: #07080d;
+  --bg-glow-1: rgba(124, 92, 255, 0.35);
+  --bg-glow-2: rgba(0, 200, 255, 0.22);
+  --bg-glow-3: rgba(255, 70, 160, 0.18);
+
+  /* Text */
+  --text: rgba(255, 255, 255, 0.92);
+  --text-muted: rgba(255, 255, 255, 0.58);
+  --text-faint: rgba(255, 255, 255, 0.36);
+
+  /* Accent */
+  --accent: #8b7bff;
+  --accent-2: #3dd6ff;
+  --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --danger: #f87171;
+
+  /* Glass */
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-bg-strong: rgba(255, 255, 255, 0.1);
+  --glass-bg-hover: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-border-strong: rgba(255, 255, 255, 0.22);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --glass-blur: blur(20px) saturate(160%);
+  --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+
+  /* Shape */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Typography */
+  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration: 180ms;
+
+  --focus-ring: 0 0 0 3px rgba(139, 123, 255, 0.45);
+}
